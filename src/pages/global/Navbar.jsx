@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Badge, Box, IconButton, Typography } from '@mui/material';
-import { ShoppingBagOutlined } from '@mui/icons-material';
+import { CookieOutlined } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { setIsCartOpen } from '../../state';
 
@@ -74,7 +74,7 @@ const Navbar = () => {
               onClick={() => dispatch(setIsCartOpen({}))}
               sx={{ color: 'white', fontSize: { xs: '20px', sm: '26px' } }}
             >
-              <ShoppingBagOutlined fontSize="inherit" />
+              <CookieOutlined fontSize="inherit" />
             </IconButton>
           </Badge>
         </Box>
